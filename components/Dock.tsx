@@ -1,80 +1,72 @@
 import React from "react";  
 import {
-  IconBrandGithub,
-  IconBrandX,
   IconExchange,
   IconHome,
-  IconNewSection,
-  IconTerminal2,
+  IconPhoto,
+  IconInfoCircle,
+  IconMail,
+  IconPackage,
+  IconStar,
 } from "@tabler/icons-react";
 import Image from "next/image";
 import { FloatingDock } from "./ui/floating-dock";
 
-export function FloatingDockDemo() {
+export function Dock() {
   const links = [
     {
       title: "Home",
       icon: (
-        <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconHome className="h-full w-full text-neutral-300" />
       ),
       href: "#",
     },
 
     {
-      title: "Products",
+      title: "Gallery",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconPhoto className="h-full w-full text-neutral-300" />
       ),
-      href: "#",
+      href: "#gallery",
     },
     {
-      title: "Components",
+      title: "About",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconInfoCircle className="h-full w-full text-neutral-300" />
       ),
-      href: "#",
+      href: "#about",
     },
     {
-      title: "Aceternity UI",
+      title: "Contact",
       icon: (
-        <Image
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
+        <IconMail className="h-full w-full text-neutral-300" />
       ),
-      href: "#",
+      href: "#contact",
     },
     {
-      title: "Changelog",
+      title: "Testimonials",
       icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconStar className="h-full w-full text-neutral-300" />
       ),
-      href: "#",
+      href: "#testimonials",
+    },
+    {
+      title: "Packages",
+      icon: (
+        <IconPackage className="h-full w-full text-neutral-300" />
+      ),
+      href: "#packages",
     },
 
-    {
-      title: "Twitter",
-      icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
-    },
+
   ];
   return (
-    <div className="flex items-center justify-center h-[35rem] w-full">
+    <div className="fixed bottom-2 left-0 right-0 flex justify-center">
       <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
+        // mobileClassName="translate-y-20" // only for demo, remove for production
         items={links}
       />
     </div>
   );
 }
+
+export default Dock;
