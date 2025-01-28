@@ -9,6 +9,7 @@ import Head from "next/head";
 import About from "@/components/About";
 import ContactUs from "@/components/ContactUs";
 import Packages from "@/components/Packages";
+import Terms from "@/components/Terms";
 
 const testimonials = [
   {
@@ -93,6 +94,7 @@ export default function Home() {
             </div>
             <div id="contact">
               <ContactUs />
+              <Terms />
             </div>
           </div>
             <Dock />

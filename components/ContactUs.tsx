@@ -34,6 +34,7 @@ import { Textarea } from "@/components/ui/textarea";
 const formSchema = z.object({
   firstName: z.string().min(2).max(255),
   lastName: z.string().min(2).max(255),
+  phone: z.string().min(10).max(15),
   email: z.string().email(),
   subject: z.string().min(2).max(255),
   message: z.string(),
@@ -44,7 +45,7 @@ export const ContactUs = () => {
     resolver: zodResolver(formSchema),
     defaultValues: {
       firstName: "",
-      lastName: "",
+      phone: "", 
       email: "",
       subject: "Wedding",
       message: "",
@@ -52,7 +53,7 @@ export const ContactUs = () => {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const { firstName, lastName, email, subject, message } = values;
+    const { firstName, phone, email, subject, message } = values;
     const formspreeEndpoint = "https://formspree.io/f/xjvnqvzo";
 
     try {
@@ -63,7 +64,7 @@ export const ContactUs = () => {
         },
         body: JSON.stringify({
           firstName,
-          lastName,
+          phone,
           email,
           subject,
           message,
@@ -83,7 +84,7 @@ export const ContactUs = () => {
   }
 
   return (
-    <section id="contact" className="container py-24 sm:py-32">
+    <section id="contact" className="container py-24 sm:py-32 left-6">
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <div className="mb-4">
@@ -139,7 +140,7 @@ export const ContactUs = () => {
                       <FormItem className="w-full">
                         <FormLabel>Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="First Name" {...field} />
+                          <Input placeholder=" Name " {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -147,6 +148,26 @@ export const ContactUs = () => {
                     
                   />
 
+                </div>
+
+                <div className="flex flex-col gap-1.5">
+                  <FormField
+                    control={form.control}
+                    name="phone"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Phone</FormLabel>
+                        <FormControl>
+                          <Input
+                            type="tel"
+                            placeholder="Phone number"
+                            {...field}
+                          />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
                 </div>
 
                 <div className="flex flex-col gap-1.5">
