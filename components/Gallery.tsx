@@ -102,6 +102,7 @@ const cards = [
 
 export function Gallery() {
   return (
+    <div className="bg-gradient-to-b from-white-100 via-slate-50 to-slate-300">
     <div className="bg-white text-black p-8 rounded-lg ">
     <h1 className="text-5xl font-extrabold text-center mt-4">
     Gallery
@@ -109,6 +110,7 @@ export function Gallery() {
     <div className="h-screen py-20 w-full">
       <LayoutGrid cards={cards} />
     </div>
+  </div>
   </div>
   );
 }

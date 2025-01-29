@@ -6,7 +6,7 @@ const Terms = () => {
     <div>
       <Link href="/terms-and-conditions" >
       <div className='text-center text-bold text-xl'>
-        <h3>Terms and conditions</h3>
+        <h3></h3>
         </div>
       </Link>
     </div>
