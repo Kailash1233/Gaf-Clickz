@@ -5,83 +5,81 @@ import { HeroParallax } from "./ui/hero-parallax";
 export function HeroParallaxDemo() {
   return <HeroParallax products={products} />;
 }
+
 export const products = [
   {
-    title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    title: "Celebrity Portrait",
+    link: "",
     thumbnail: "/images/Celebrity.jpg",
   },
   {
-    title: "Cursor",
-    link: "https://cursor.so",
+    title: "Travel Adventures",
+    link: "",
     thumbnail: "/images/Travel.jpg",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
+    title: "Event Photography",
+    link: "",
     thumbnail: "/images/Events3.jpg",
   },
-
   {
-    title: "Editorially",
-    link: "https://editorially.org",
+    title: "Celebrity Shoot",
+    link: "",
     thumbnail: "/images/Celebrity2.jpg",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
+    title: "Concert & Live Events",
+    link: "",
     thumbnail: "/images/Events2.jpg",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    title: "Grand Celebrations",
+    link: "",
     thumbnail: "/images/Events.jpg",
   },
-
   {
-    title: "Algochurn",
-    link: "https://algochurn.com",
+    title: "Fashion & Glamour",
+    link: "",
     thumbnail: "/images/Fashion.jpg",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    title: "Corporate & Formal Events",
+    link: "",
     thumbnail: "/images/Events4.jpg",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    title: "Wedding Moments",
+    link: "",
     thumbnail: "/images/Wedding1.jpg",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    title: "Family Bonding",
+    link: "",
     thumbnail: "/images/Family.jpg",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    title: "Wildlife & Nature",
+    link: "",
     thumbnail: "/images/Animals.jpg",
   },
-
   {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
+    title: "Pre-Wedding Shoots",
+    link: "",
     thumbnail: "/images/PreWedding.jpg",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    title: "Kids & Childhood Memories",
+    link: "",
     thumbnail: "/images/Kids.jpg",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
+    title: "Scenic Landscapes",
+    link: "",
     thumbnail: "/images/Nature.jpg",
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
+    title: "Celebrity Red Carpet",
+    link: "",
     thumbnail: "/images/Celebrity3.jpg",
   },
 ];

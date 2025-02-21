@@ -1,59 +1,113 @@
-
-import Link from 'next/link';
+"use client";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [year, setYear] = useState(2024);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
-    <footer className="bg-white text-black py-8">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          {/* Left Column - Moved more left */}
-          <div className="flex flex-col items-start pl-4 md:pl-0"> 
-            <h3 className="font-bold text-xl mb-4">Gaf Clickz</h3>
-            <p className="mb-3">123 Photography Street</p>
-            <p className="mb-3">Chennai, Tamil Nadu</p>
-            <p>India</p>
+    <footer className="bg-black text-white py-12">
+      <div className="container mx-auto px-6 md:px-12 lg:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {/* Left Column - Address */}
+          <div className="flex flex-col">
+            <h3 className="font-semibold text-xl text-gray-300 mb-4">
+              Gaf Clickz
+            </h3>
+            <p className="text-gray-400">123 Photography Street</p>
+            <p className="text-gray-400">Chennai, Tamil Nadu</p>
+            <p className="text-gray-400">India</p>
           </div>
 
-          {/* Center spacing */}
-          <div className="hidden md:block"></div>
-
-          {/* Right Column - Moved more right */}
-          <div className="pr-4 md:pr-0 md:ml-auto">
-            <h3 className="font-bold text-xl mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="#gallery">Gallery</Link></li>
-              <li><Link href="/about">About Us</Link></li>
-              <li><Link href="/testimonials">Testimonials</Link></li>
-              <li><Link href="/contact">Contact</Link></li>
+          {/* Middle Column - Quick Links */}
+          <div className="flex flex-col md:items-center">
+            <h3 className="font-semibold text-xl text-gray-300 mb-4">
+              Quick Links
+            </h3>
+            <ul className="space-y-3 text-gray-400">
+              <li>
+                <Link href="/" className="hover:text-white transition">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="#gallery" className="hover:text-white transition">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-white transition">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/testimonials"
+                  className="hover:text-white transition"
+                >
+                  Testimonials
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-white transition">
+                  Contact
+                </Link>
+              </li>
             </ul>
-            
-            <div className="mt-8">
-              <h3 className="font-bold text-xl mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li><Link href="/wedding">Wedding</Link></li>
-                <li><Link href="/animals">Animals</Link></li>
-                <li><Link href="/fashion">Fashion</Link></li>
-              </ul>
-            </div>
+          </div>
 
-            <div className="mt-8">
-              <h3 className="font-bold text-xl mb-4">Privacy Policy</h3>
-              <ul className="space-y-2">
-                <li><Link href="/terms-and-conditions">Terms & Conditions</Link></li>
+          {/* Right Column - Categories & Policies */}
+          <div className="flex flex-col md:items-end">
+            <h3 className="font-semibold text-xl text-gray-300 mb-4">
+              Categories
+            </h3>
+            <ul className="space-y-3 text-gray-400">
+              <li>
+                <Link href="/wedding" className="hover:text-white transition">
+                  Wedding
+                </Link>
+              </li>
+              <li>
+                <Link href="/animals" className="hover:text-white transition">
+                  Animals
+                </Link>
+              </li>
+              <li>
+                <Link href="/fashion" className="hover:text-white transition">
+                  Fashion
+                </Link>
+              </li>
+            </ul>
+
+            <div className="mt-6">
+              <h3 className="font-semibold text-xl text-gray-300 mb-4">
+                Privacy Policy
+              </h3>
+              <ul className="text-gray-400">
+                <li>
+                  <Link
+                    href="/terms-and-conditions"
+                    className="hover:text-white transition"
+                  >
+                    Terms & Conditions
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
-          
-      {/* Bottom Section */}
-      <div className="border-t border-gray-200 mt-8 pt-8 flex justify-center">
-        <div className="text-center">
-         <p>© {new Date().getFullYear()} Gaf Clickz. All rights reserved.</p>
         </div>
+
+        {/* Bottom Section */}
+        <div className="border-t border-gray-600 mt-12 pt-6 text-center">
+          <p className="text-gray-400 text-sm">
+            © {year} Gaf Clickz. All rights reserved.
+          </p>
         </div>
-        </div>
-        </div>
+      </div>
     </footer>
   );
 };

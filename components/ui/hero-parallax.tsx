@@ -54,10 +54,11 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
+
   return (
     <div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] bg-white text-black"
+      className="h-[300vh] py-40 overflow-hidden relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] bg-black text-white"
     >
       <Header />
       <motion.div
@@ -67,7 +68,6 @@ export const HeroParallax = ({
           translateY,
           opacity,
         }}
-        className=""
       >
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product) => (
@@ -103,11 +103,11 @@ export const HeroParallax = ({
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0 bg-white text-black">
+    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0 bg-black text-white">
       <h1 className="text-2xl md:text-7xl font-bold">
         GafClickz Studio <br /> Capturing Stories, One Frame at a Time
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8">
+      <p className="max-w-2xl text-base md:text-xl mt-8 text-gray-300">
         Turning moments into art. From nature&apos;s grandeur to human
         connections, every click tells a story worth sharing.
       </p>
@@ -139,7 +139,7 @@ export const ProductCard = ({
     >
       <Link
         href={product.link}
-        className="block group-hover/product:shadow-2xl bg-white"
+        className="block group-hover/product:shadow-2xl bg-black"
       >
         <Image
           src={product.thumbnail}
@@ -149,8 +149,8 @@ export const ProductCard = ({
           alt={product.title}
         />
       </Link>
-      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black bg-opacity-20 pointer-events-none"></div>
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-black">
+      <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black bg-opacity-40 pointer-events-none"></div>
+      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
         {product.title}
       </h2>
     </motion.div>
