@@ -58,29 +58,30 @@ import Gallery from "@/components/Gallery";
 import Head from "next/head";
 import About from "@/components/About";
 import Packages from "@/components/Packages";
-import Terms from "@/components/Terms";
-import Footer from "@/components/Footer";
-import { ContactUs } from "@/components/ContactUs";
 import Navbar from "@/components/navbar";
+import EnquireForm from "@/components/enquire-form";
+import ContactPage from "@/components/contact-page";
 
 export default function Home() {
   const [imageSrc, setImageSrc] = useState("");
 
   useEffect(() => {
-    const getImageSrc = () =>
-      window.innerWidth < 768 ? "/GafClickz1.jpg" : "/GafClickz.jpg";
+    if (typeof window !== "undefined") {
+      const getImageSrc = () =>
+        window.innerWidth < 768 ? "/GafClickz1.jpg" : "/GafClickz.jpg";
 
-    const handleResize = () => setImageSrc(getImageSrc());
+      const handleResize = () => setImageSrc(getImageSrc());
 
-    // Set initial image source after mount
-    handleResize();
+      // Set initial image source after mount
+      handleResize();
 
-    // Listen for window resize events
-    window.addEventListener("resize", handleResize);
+      // Listen for window resize events
+      window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
 
   return (
@@ -91,12 +92,14 @@ export default function Home() {
           name="description"
           content="I transform ordinary scenes into extraordinary works of art, drawing viewers into my world and encouraging them to discover new perspectives through my lens."
         />
+        <meta
+          name="google-site-verification"
+          content="yPe0RyV5gBivZ0tYEoO_Nl_JEQoWq2JNPzwr6yX_9CM"
+        />
       </Head>
 
       <main className="relative bg-black text-white">
         <Navbar />
-
-        {/* Full Page Cover Image (Fixed SSR Issue) */}
         {imageSrc && (
           <div className="absolute inset-0 z-10 h-screen w-full">
             <img
@@ -119,18 +122,15 @@ export default function Home() {
           <About />
         </div>
 
-        <div className="flex min-h-screen flex-col items-center justify-between py-24 px-5">
-          <div id="packages">
-            <Packages />
-          </div>
-          <div id="contact">
-            <ContactUs />
-            <Terms />
-          </div>
+        <div id="packages">
+          <Packages />
+        </div>
+        <div id="contact">
+          <EnquireForm />
         </div>
 
         <div id="Footer">
-          <Footer />
+          <ContactPage />
         </div>
       </main>
     </>

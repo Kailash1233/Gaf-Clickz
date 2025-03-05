@@ -35,8 +35,7 @@ const cards: Card[] = [
   //   id: 7,
   //   title: "Wildlife",
   //   url: "/animals",
-  //   thumbnail: "/images/Animals.jpg",
-  // },
+  //   thumbnail: "/images/Animals.jpg" },
 ];
 
 export default function Gallery() {
@@ -44,9 +43,14 @@ export default function Gallery() {
 
   return (
     <section id="gallery">
-      <div className="bg-black min-h-screen py-12">
+      <div className="bg-gradient-to-b from-black via-gray-800 to-black min-h-screen py-12">
         <div className="text-white p-8 max-w-7xl mx-auto">
           <h1 className="text-5xl font-extrabold text-center mb-8">Gallery</h1>
+          <p className="text-lg text-center max-w-2xl mx-auto mb-12">
+            Explore our stunning collection of photographs, capturing the
+            essence of weddings, fashion, events, and celebrity moments. Click
+            on any category to view more!
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {cards.map((card) => (
               <div

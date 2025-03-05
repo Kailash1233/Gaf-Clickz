@@ -5,7 +5,7 @@ import { cn } from "@/app/lib/utils";
 
 type Card = {
   id: number;
-  content: React.ReactNode; // Remove JSX.Element
+  content: React.ReactNode;
   className: string;
   thumbnail: string;
 };
