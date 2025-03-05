@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { imageLoader } from "@/app/lib/imageLoader";
-
 import Autoplay from "embla-carousel-autoplay";
 
 import {

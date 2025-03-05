@@ -3,14 +3,8 @@
 import Image from "next/image";
 import { imageLoader } from "@/app/lib/imageLoader";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { Testimonial } from "@/types/testimonial";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 
 interface TestimonialSliderCardProps {
   testimonials: Testimonial[];

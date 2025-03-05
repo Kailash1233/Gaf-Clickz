@@ -47,8 +47,8 @@ export default function TermsAndConditionsPage() {
               </h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  Clients may reschedule a session with at least 10 day's notice
-                  without penalty.
+                  Clients may reschedule a session with at least 10 day&apos;s
+                  notice without penalty.
                 </li>
                 <li>
                   If a session is cancelled by the Client within 15 days of the
@@ -167,8 +167,8 @@ export default function TermsAndConditionsPage() {
                 </li>
                 <li>
                   The Studio reserves the right to end a session early if the
-                  Client's behaviour is deemed inappropriate, disruptive, or
-                  unsafe. In such cases, no refund will be provided.
+                  Client&apos;s behaviour is deemed inappropriate, disruptive,
+                  or unsafe. In such cases, no refund will be provided.
                 </li>
               </ul>
             </section>

@@ -104,13 +104,14 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0 bg-black text-white">
-      <h1 className="text-2xl md:text-7xl font-bold">
+      {/* <h1 className="text-2xl md:text-7xl font-bold">
         GafClickz Studio <br /> Capturing Stories, One Frame at a Time
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 text-gray-300">
         Turning moments into art. From nature&apos;s grandeur to human
         connections, every click tells a story worth sharing.
-      </p>
+      </p> */}
+      {/* <img src="/Gafclickz.jpg" alt="gafclickz" /> */}
     </div>
   );
 };

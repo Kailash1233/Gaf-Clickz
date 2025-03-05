@@ -1,8 +1,9 @@
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="bg-black py-16">
+    <section className="bg-black py-16" id="about">
       <div className="max-w-7xl mx-auto px-6 sm:px-12">
         <h2 className="text-4xl font-extrabold text-white text-center mb-8">
           About Us
@@ -16,10 +17,12 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Image Section */}
           <div className="flex justify-center">
-            <img
+            <Image
               src="/myimages/gaf.jpg"
               alt="Abdul Gafur"
-              className="rounded-xl shadow-lg transform hover:scale-105 transition duration-300 hover:shadow-white/50"
+              width={500} // Adjust width as needed
+              height={500} // Adjust height as needed
+              className="rounded-xl shadow-lg transform transition duration-300"
             />
           </div>
           {/* Text Section */}
