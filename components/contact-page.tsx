@@ -189,13 +189,14 @@
 //     </motion.div>
 //   );
 // }
-
 "use client";
 
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUp } from "lucide-react";
 import { motion } from "framer-motion";
+import { FaInstagram, FaWhatsapp, FaUnsplash, FaYoutube } from "react-icons/fa";
 
 export default function ContactPage() {
   const scrollToTop = () => {
@@ -240,7 +241,7 @@ export default function ContactPage() {
       transition={{ duration: 0.6 }}
       className="overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black text-white"
     >
-      <div className="container mx-auto px-4 md:px-8 py-12 overflow-hidden">
+      <div className="container mx-auto px-4 md:px-8 py-12 overflow-hidden font-chloe">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Side - Navigation */}
           <motion.div
@@ -255,6 +256,11 @@ export default function ContactPage() {
               <NavItem number="03" title="About" route="#about" />
               <NavItem number="04" title="Packages" route="#packages" />
               <NavItem number="05" title="Contact" route="#contact" />
+              <NavItem
+                number="06"
+                title="Terms & Conditions"
+                route="/terms-and-conditions"
+              />
             </nav>
 
             <div className="pt-16">
@@ -304,11 +310,27 @@ export default function ContactPage() {
 
               <div>
                 <h2 className="text-xl font-medium mb-4">Follow Us</h2>
-                <div className="grid grid-cols-2 gap-y-3">
-                  <SocialLink title="Facebook" />
-                  <SocialLink title="Instagram" />
-                  <SocialLink title="Youtube" />
-                  <SocialLink title="Whatsapp" />
+                <div className="flex space-x-6">
+                  <SocialLink
+                    title="Instagram"
+                    href="https://www.instagram.com/gaf.clickz/"
+                    icon={<FaInstagram size={24} />}
+                  />
+                  <SocialLink
+                    title="Whatsapp"
+                    href="#"
+                    icon={<FaWhatsapp size={24} />}
+                  />
+                  <SocialLink
+                    title="Unsplash"
+                    href="https://unsplash.com/@gafclickz"
+                    icon={<FaUnsplash size={24} />}
+                  />
+                  <SocialLink
+                    title="Youtube"
+                    href="#"
+                    icon={<FaYoutube size={24} />}
+                  />
                 </div>
               </div>
             </div>
@@ -322,7 +344,7 @@ export default function ContactPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center"
+          className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center font-gotham"
         >
           <p className="text-gray-400 text-sm">
             Copyright © 2025 Gafclickz. All rights reserved | Designed by{" "}
@@ -347,21 +369,27 @@ export default function ContactPage() {
   );
 }
 
-function SocialLink({ title }: { title: string }) {
+function SocialLink({
+  title,
+  href,
+  icon,
+}: {
+  title: string;
+  href: string;
+  icon: React.ReactElement;
+}) {
   return (
-    <motion.div
+    <motion.a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       initial={{ opacity: 0, y: 10 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
+      className="text-gray-300 hover:text-white transition-colors"
+      aria-label={title}
     >
-      <Link
-        href={`https://${title.toLowerCase()}.com`}
-        className="text-gray-300 hover:text-white transition-colors"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {title}
-      </Link>
-    </motion.div>
+      {icon}
+    </motion.a>
   );
 }

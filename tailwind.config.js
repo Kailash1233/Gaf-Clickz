@@ -48,6 +48,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
+        gotham: ["Gotham", "sans-serif"], // Use class `font-gotham`
+        chloe: ["Chloe", "cursive"], // Use class `font-chloe`
       },
     },
   },

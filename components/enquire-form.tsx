@@ -64,12 +64,12 @@ export default function EnquireForm() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="w-full md:w-1/2 mb-8 md:mb-0"
         >
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight font-chloe">
             Book Shoot
             <br />
             Now
           </h1>
-          <p className="mt-8 text-base md:text-lg max-w-md">
+          <p className="mt-8 text-base md:text-lg max-w-md font-gotham">
             Select a service and fill out the form to book your shoot today!
           </p>
         </motion.div>
@@ -79,7 +79,7 @@ export default function EnquireForm() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="w-full md:w-1/2"
+          className="w-full md:w-1/2 font-gotham"
         >
           <form onSubmit={handleSubmit} className="space-y-4">
             <Input

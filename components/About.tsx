@@ -15,7 +15,7 @@ const About = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl font-extrabold text-white text-center mb-8"
+          className="text-4xl font-extrabold text-white text-center mb-8 font-chloe"
         >
           About Gaf Clickz
         </motion.h2>
@@ -23,7 +23,7 @@ const About = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="text-xl text-gray-200 text-center mb-12 max-w-3xl mx-auto"
+          className="text-xl text-gray-200 text-center mb-12 max-w-3xl mx-auto font-gotham"
         >
           Learn more about{" "}
           <span className="font-semibold text-white">who we are</span>,
@@ -56,10 +56,10 @@ const About = () => {
             className="flex flex-col justify-center space-y-6"
           >
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-4">
+              <h3 className="text-2xl font-semibold text-white mb-4 font-chloe">
                 About Abdul Gafur
               </h3>
-              <p className="text-lg text-gray-200 leading-relaxed">
+              <p className="text-lg text-gray-200 leading-relaxed font-gotham">
                 <span className="font-medium text-white">Abdul Gafur</span> is a
                 seasoned photographer with a unique ability to capture moments
                 in time, inviting viewers to experience the emotions, stories,
@@ -70,7 +70,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <p className="text-lg text-gray-200 leading-relaxed">
+              <p className="text-lg text-gray-200 leading-relaxed font-gotham">
                 His work not only reflects technical mastery but also a profound
                 passion for storytelling. Whether capturing the grandeur of
                 nature, the intimacy of human connections, or the vibrant pulse
@@ -79,10 +79,10 @@ const About = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-4">
+              <h3 className="text-2xl font-semibold text-white mb-4 font-chloe">
                 Our Mission
               </h3>
-              <p className="text-lg text-gray-200 leading-relaxed">
+              <p className="text-lg text-gray-200 leading-relaxed font-gotham">
                 Our <span className="font-medium text-white">mission</span> is
                 to empower businesses and individuals by providing exceptional
                 services that drive success. We are committed to exceeding

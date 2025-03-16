@@ -1,25 +1,26 @@
-import Dock from "@/components/Dock";
-import Footer from "@/components/Footer";
+import ContactPage from "@/components/contact-page";
+import Navbar from "@/components/navbar";
 import Image from "next/image";
 
 export default function TermsAndConditionsPage() {
   return (
     <>
-      <Dock />
-      <div className="min-h-screen bg-white">
-        {/* Hero Section */}
-        <div className="relative h-[20vh] w-full">
+      <Navbar />
+      <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white pb-20">
+        <div className="relative w-full h-[20vh] md:h-[65vh]">
           <Image
-            src="/images/TandC.jpg"
-            alt="Fashion Banner"
+            src="/images/banner.png"
+            alt="Terms and Conditions Banner"
             fill
             className="object-cover"
             priority
           />
         </div>
-        <div className="container mx-auto p-8">
-          <h1 className="text-2xl font-bold mb-6">Terms and Conditions</h1>
-          <div className="prose max-w-none space-y-8">
+        <div className="container mx-auto p-6 md:p-12">
+          <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 font-chloe">
+            Terms and Conditions
+          </h1>
+          <div className="prose max-w-none space-y-8 text-gray-300 font-gotham">
             <section>
               <h2 className="text-xl font-semibold mb-4">
                 1. Booking and Payment
@@ -37,7 +38,7 @@ export default function TermsAndConditionsPage() {
                   The deposit is non-refundable unless the session is cancelled
                   by the Studio.
                 </li>
-                <li>Payments can be made via Gpay, card, cash.</li>
+                <li>Payments can be made via Gpay, card, or cash.</li>
               </ul>
             </section>
 
@@ -47,7 +48,7 @@ export default function TermsAndConditionsPage() {
               </h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  Clients may reschedule a session with at least 10 day&apos;s
+                  Clients may reschedule a session with at least 10 days&apos;
                   notice without penalty.
                 </li>
                 <li>
@@ -56,9 +57,8 @@ export default function TermsAndConditionsPage() {
                 </li>
                 <li>
                   The Studio reserves the right to cancel or reschedule a
-                  session due to unforeseen circumstances, such as illness or
-                  equipment failure. In such cases, the Client will be offered a
-                  refund or alternative booking.
+                  session due to unforeseen circumstances. In such cases, the
+                  Client will be offered a refund or alternative booking.
                 </li>
               </ul>
             </section>
@@ -91,18 +91,15 @@ export default function TermsAndConditionsPage() {
               <ul className="list-disc pl-6 space-y-2">
                 <li>
                   The Studio retains full copyright to all images taken during
-                  the session, including digital files and prints.
+                  the session.
                 </li>
                 <li>
                   The Studio grants the Client a personal license to use the
-                  images for non-commercial purposes. Commercial use requires a
-                  separate agreement.
+                  images for non-commercial purposes.
                 </li>
                 <li>
-                  The Studio may use the images for promotional purposes,
-                  including online portfolios, social media, and advertising. If
-                  you prefer not to have your images used in this way, you must
-                  inform the Studio in writing prior to the session.
+                  The Studio may use the images for promotional purposes unless
+                  the Client opts out in writing.
                 </li>
               </ul>
             </section>
@@ -113,12 +110,12 @@ export default function TermsAndConditionsPage() {
               </h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  Digital photos will be delivered to the Client within 4 weeks
-                  following the session, unless otherwise agreed upon.
+                  Digital photos will be delivered within 4 weeks following the
+                  session.
                 </li>
                 <li>
-                  The Studio is not responsible for any delays caused by
-                  technical issues, third-party vendors, or force majeure.
+                  The Studio is not responsible for delays caused by technical
+                  issues or force majeure.
                 </li>
               </ul>
             </section>
@@ -129,14 +126,11 @@ export default function TermsAndConditionsPage() {
               </h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  The Studio collects personal information (such as name,
-                  contact information) to facilitate the booking and completion
-                  of the session.
+                  The Studio collects personal information to facilitate the
+                  booking.
                 </li>
                 <li>
-                  The Studio agrees to keep your personal information
-                  confidential and will not share it with third parties without
-                  your consent, except as required by law.
+                  The Studio agrees to keep personal information confidential.
                 </li>
               </ul>
             </section>
@@ -145,13 +139,8 @@ export default function TermsAndConditionsPage() {
               <h2 className="text-xl font-semibold mb-4">7. Liability</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  The Studio will not be held liable for any accidents,
-                  injuries, or damages that occur during the session.
-                </li>
-                <li>
-                  The Client agrees to release the Studio from any claims or
-                  liabilities related to the session, including damage to
-                  personal property or injury to persons.
+                  The Studio is not liable for any accidents, injuries, or
+                  damages during the session.
                 </li>
               </ul>
             </section>
@@ -162,13 +151,11 @@ export default function TermsAndConditionsPage() {
               </h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  The Client agrees to behave professionally and respectfully
-                  during the session.
+                  The Client agrees to behave professionally during the session.
                 </li>
                 <li>
-                  The Studio reserves the right to end a session early if the
-                  Client&apos;s behaviour is deemed inappropriate, disruptive,
-                  or unsafe. In such cases, no refund will be provided.
+                  The Studio reserves the right to end a session early due to
+                  inappropriate conduct.
                 </li>
               </ul>
             </section>
@@ -177,10 +164,8 @@ export default function TermsAndConditionsPage() {
               <h2 className="text-xl font-semibold mb-4">9. Force Majeure</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  The Studio will not be liable for any failure or delay in
-                  performing its obligations due to causes beyond its reasonable
-                  control, including but not limited to natural disasters,
-                  illness, or other unforeseen events.
+                  The Studio will not be liable for failures due to events
+                  beyond its control.
                 </li>
               </ul>
             </section>
@@ -189,16 +174,15 @@ export default function TermsAndConditionsPage() {
               <h2 className="text-xl font-semibold mb-4">10. Amendments</h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
-                  These terms and conditions may be amended from time to time.
-                  The Client will be notified of any material changes, and the
-                  new terms will apply to future bookings.
+                  These terms may be amended, and Clients will be notified of
+                  material changes.
                 </li>
               </ul>
             </section>
           </div>
         </div>
       </div>
-      <Footer />
+      <ContactPage />
     </>
   );
 }

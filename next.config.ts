@@ -19,6 +19,18 @@ module.exports = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        port: "",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "xlrcascpjompagzkvzoa.supabase.co",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
   reactStrictMode: true,

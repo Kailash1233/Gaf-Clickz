@@ -74,3 +74,23 @@ html {
 body {
   @apply bg-background text-white;
 }
+
+@font-face {
+  font-family: "Gotham";
+  src: url("/fonts/GothamOffice-Regular.woff2") format("woff2"),
+    url("/fonts/GothamOffice-Regular.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chloe";
+  src: url("/fonts/Chloe-Regular.woff2") format("woff2"),
+    url("/fonts/Chloe-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-serif {
+  font-family: var(--font-playfair);
+}
