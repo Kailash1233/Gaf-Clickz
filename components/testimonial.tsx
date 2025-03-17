@@ -93,7 +93,7 @@ export const TestimonialSection = () => {
         </h2>
         <p className="mt-2 text-lg font-gotham">
           Real stories from happy clients who trusted us to capture their
-          special moments.
+          special moments
         </p>
       </div>
 
