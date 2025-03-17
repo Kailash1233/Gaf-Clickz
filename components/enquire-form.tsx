@@ -135,12 +135,13 @@ export default function EnquireForm() {
               </option>
               <option value="Marriage">Marriage</option>
               <option value="Birthday">Birthday</option>
-              <option value="Event">Event</option>
-              <option value="Functions">Functions</option>
               <option value="Maternity">Maternity</option>
-              <option value="Celebrity">Celebrity</option>
-              <option value="Portrait Photoshoot">Portrait Photoshoot</option>
-              <option value="Product Photography">Product Photography</option>
+              <option value="Commercial Events">Commercial Events</option>
+              <option value="Corporate Events">Corporate Events</option>
+              <option value="Fashion">Fashion</option>
+              <option value="Portfolio">Portfolio</option>
+              <option value="Product Shoot">Product Shoot</option>
+              <option value="Advertisements">Advertisements</option>
               <option value="Others">Others</option>
             </select>
 

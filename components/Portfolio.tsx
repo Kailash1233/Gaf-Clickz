@@ -8,10 +8,10 @@ interface WeddingCouple {
 
 const featuredWeddings: WeddingCouple[] = [
   {
-    title: "Aajeedh Khalique",
+    title: "Pradeep Kumar",
     location: "Celebrity Shoot",
     image:
-      "https://xlrcascpjompagzkvzoa.supabase.co/storage/v1/object/public/gafgallery/Gallery/Celebrity1.jpg",
+      "https://xlrcascpjompagzkvzoa.supabase.co/storage/v1/object/public/gafgallery/Gallery/Celebrity2.jpg",
   },
   {
     title: "Event Celebration",
@@ -40,7 +40,7 @@ export default function PortfolioPage() {
     >
       <div className="container mx-auto px-4 py-12 md:py-16">
         {/* Heading */}
-        <h1 className="text-3xl md:text-5xl text-center mb-8 md:mb-12 font-chloe">
+        <h1 className="text-3xl md:text-5xl text-center mb-8 md:mb-12 font-chloe tracking-widest">
           Gallery
         </h1>
 

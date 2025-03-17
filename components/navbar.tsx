@@ -2,8 +2,9 @@
 import { Menu } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { FaInstagram, FaWhatsapp, FaUnsplash, FaYoutube } from "react-icons/fa";
 import {
   Sheet,
   SheetContent,
@@ -55,19 +56,19 @@ const Navbar = () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/10 backdrop-blur-md text-white shadow-md"
+          ? "bg-black/10 backdrop-blur-md text-white shadow-md"
           : "bg-transparent"
       }`}
     >
-      <div className="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl mx-auto flex justify-between items-center py-3 font-chloe">
+      <div className="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl mx-auto flex justify-between items-center py-3 font-chloe tracking-widest">
         <Link href="/" className="font-bold text-xl flex items-center">
-          <Image
+          {/* <Image
             src="/gaftext.png"
             alt="GafClickz Logo"
             width={80}
             height={80}
             className="mr-2"
-          />
+          /> */}
           {/* Gaf Clickz */}
         </Link>
 
@@ -83,7 +84,7 @@ const Navbar = () => {
 
             <SheetContent
               side="left"
-              className="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-white text-black"
+              className="flex flex-col justify-between bg-white text-black"
             >
               <div>
                 <SheetHeader className="mb-4 ml-4">
@@ -92,13 +93,6 @@ const Navbar = () => {
                       href="/"
                       className="font-bold text-lg flex items-center"
                     >
-                      {/* <Image
-                        src="/logo2.png"
-                        alt="GafClickz Logo"
-                        width={30}
-                        height={30}
-                        className="mr-2"
-                      /> */}
                       Gaf Clickz
                     </Link>
                   </SheetTitle>
@@ -118,10 +112,53 @@ const Navbar = () => {
                   ))}
                 </div>
               </div>
-              <Button className="w-full font-bold transition-colors duration-300 bg-black text-white">
-                <Link href="#contact">Book a Shoot</Link>
+
+              {/* Social Media Links */}
+              <div className="flex justify-center space-x-6 py-4">
+                <Link
+                  href="https://www.instagram.com/gaf.clickz/"
+                  target="_blank"
+                >
+                  <FaInstagram
+                    size={24}
+                    className="text-black hover:text-gray-600"
+                  />
+                </Link>
+                <Link href="https://wa.me/9176266052" target="_blank">
+                  <FaWhatsapp
+                    size={24}
+                    className="text-black hover:text-gray-600"
+                  />
+                </Link>
+                <Link href="https://unsplash.com/@gafclickz" target="_blank">
+                  <FaUnsplash
+                    size={24}
+                    className="text-black hover:text-gray-600"
+                  />
+                </Link>
+                <Link href="#" target="_blank">
+                  <FaYoutube
+                    size={24}
+                    className="text-black hover:text-gray-600"
+                  />
+                </Link>
+              </div>
+
+              {/* Book My Shoot Button */}
+              <Button className="w-full font-bold bg-black text-white py-3 transition">
+                <Link href="#contact">Book My Shoot</Link>
                 <ArrowRight className="size-5 ml-2 transition-transform group-hover/arrow:translate-x-1" />
               </Button>
+
+              {/* Terms & Conditions */}
+              <div className="text-center py-3">
+                <Link
+                  href="/terms"
+                  className="text-gray-500 hover:text-black text-sm transition"
+                >
+                  Terms & Conditions
+                </Link>
+              </div>
             </SheetContent>
           </Sheet>
         </div>

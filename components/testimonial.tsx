@@ -88,7 +88,7 @@ export const TestimonialSection = () => {
   return (
     <section id="testimonials" className="">
       <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold mt-2 font-chloe">
+        <h2 className="text-3xl md:text-4xl font-bold mt-2 font-chloe tracking-widest">
           What Our Clients Are Saying
         </h2>
         <p className="mt-2 text-lg font-gotham">

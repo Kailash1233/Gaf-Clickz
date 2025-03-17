@@ -10,37 +10,43 @@ const packages = [
     title: "Wedding Photography",
     description:
       "Capture your special day with our professional wedding photography services. Relive every moment with stunning, high-quality images.",
-    image: "/images/Wedding1.jpg",
+    image:
+      "https://xlrcascpjompagzkvzoa.supabase.co/storage/v1/object/public/gafgallery/Cover/Wedding.jpg",
   },
   {
     title: "Maternity Shoot",
     description:
       "Preserve the beauty of motherhood with a heartwarming maternity photoshoot. Perfect for capturing this precious phase of life.",
-    image: "/images/PreWedding.jpg",
-  },
-  {
-    title: "Event Photoshoot",
-    description:
-      "From birthdays to corporate events, we cover it all with professional-grade photography to make your event unforgettable.",
-    image: "/images/events.jpg",
+    image:
+      "https://xlrcascpjompagzkvzoa.supabase.co/storage/v1/object/public/gafgallery/Cover/Maternity.jpg",
   },
   {
     title: "Fashion Photoshoot",
     description:
       "Get a high-end fashion photoshoot experience with expert lighting and posing guidance to bring out your best look.",
-    image: "/images/fashion.jpg",
+    image:
+      "https://xlrcascpjompagzkvzoa.supabase.co/storage/v1/object/public/gafgallery/Cover/Fashion.jpg",
   },
   {
-    title: "Product Photography",
+    title: "Event Photoshoot",
     description:
-      "Showcase your products in the best light with high-quality, professionally edited images for eCommerce and marketing.",
-    image: "/images/product.jpg",
+      "From birthdays to corporate events, we cover it all with professional-grade photography to make your event unforgettable.",
+    image:
+      "https://xlrcascpjompagzkvzoa.supabase.co/storage/v1/object/public/gafgallery/Cover/Event%20coverage.jpg",
   },
   {
-    title: "Portfolio Shoot",
+    title: "Corporate Photography",
     description:
-      "Create a stunning portfolio for your modeling or acting career with professionally curated photoshoots.",
-    image: "/images/Celebrity.jpg",
+      "Professional headshots, office culture photography, and branding shoots to enhance your company’ s image.",
+    image:
+      "https://xlrcascpjompagzkvzoa.supabase.co/storage/v1/object/public/gafgallery/Cover/Corporate.jpg",
+  },
+  {
+    title: "Commercial Photography",
+    description:
+      "Showcase your business, products, and services with high-quality commercial photography for marketing and advertising.",
+    image:
+      "https://xlrcascpjompagzkvzoa.supabase.co/storage/v1/object/public/gafgallery/Cover/Commercial.jpg",
   },
 ];
 
@@ -99,7 +105,7 @@ export function Packages() {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl font-extrabold text-center mb-8 font-chloe"
+          className="text-4xl font-extrabold text-center mb-8 font-chloe tracking-widest"
         >
           Photography Packages
         </motion.h1>
@@ -134,7 +140,7 @@ export function Packages() {
                 />
               </div>
               <div className="p-6 text-center">
-                <h2 className="text-xl font-semibold font-chloe">
+                <h2 className="text-xl font-semibold font-chloe tracking-widest">
                   {pkg.title}
                 </h2>
                 <p className="text-gray-700 text-sm mt-2 font-gotham">

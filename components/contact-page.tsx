@@ -241,7 +241,7 @@ export default function ContactPage() {
       transition={{ duration: 0.6 }}
       className="overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black text-white"
     >
-      <div className="container mx-auto px-4 md:px-8 py-12 overflow-hidden font-chloe">
+      <div className="container mx-auto px-4 md:px-8 py-12 overflow-hidden font-chloe tracking-widest">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Side - Navigation */}
           <motion.div
@@ -293,17 +293,27 @@ export default function ContactPage() {
                   <h2 className="text-xl font-medium mb-4">Say hello at:</h2>
                   <a
                     href="mailto:gafclickz@gmail.com"
-                    className="text-gray-300 hover:text-white transition-colors"
+                    className="text-gray-300 hover:text-white transition-colors font-gotham"
                   >
                     gafclickz@gmail.com
                   </a>
                 </div>
 
                 <div>
-                  <p className="text-gray-300">
+                  <h2 className="text-xl font-medium mb-4">Call us at:</h2>
+                  <a
+                    href="tel:9176266052"
+                    className="text-gray-300 hover:text-white transition-colors font-gotham"
+                  >
+                    +91 91762 66052
+                  </a>
+                </div>
+
+                <div>
+                  <p className="text-gray-300 font-gotham">
                     Pallavaram, Chennai
                     <br />
-                    Tamilnadu
+                    Tamil Nadu
                   </p>
                 </div>
               </div>
@@ -318,7 +328,7 @@ export default function ContactPage() {
                   />
                   <SocialLink
                     title="Whatsapp"
-                    href="#"
+                    href="https://wa.me/9176266052"
                     icon={<FaWhatsapp size={24} />}
                   />
                   <SocialLink

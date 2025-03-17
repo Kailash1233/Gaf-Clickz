@@ -16,7 +16,7 @@ export default function Home() {
     const getImageSrc = () =>
       // window.innerWidth < 768 ? "/GafClickz1.jpg" : "/GafClickz.jpg";
       window.innerWidth < 768
-        ? "https://xlrcascpjompagzkvzoa.supabase.co/storage/v1/object/public/gafgallery/Home/GafClickz1.jpg"
+        ? "https://xlrcascpjompagzkvzoa.supabase.co/storage/v1/object/public/gafgallery/Home/Gafclickz1.jpg"
         : "https://xlrcascpjompagzkvzoa.supabase.co/storage/v1/object/public/gafgallery/Home/GafClickz.jpg";
 
     const handleResize = () => setImageSrc(getImageSrc());
@@ -59,12 +59,12 @@ export default function Home() {
         <About />
       </div>
 
-      <div id="packages">
-        <Packages />
-      </div>
-
       <div id="testimonials">
         <TestimonialSection />
+      </div>
+
+      <div id="packages">
+        <Packages />
       </div>
 
       <div id="contact">
