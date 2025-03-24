@@ -27,10 +27,32 @@ const featuredWeddings: WeddingCouple[] = [
   },
 ];
 
-const galleryImages = Array.from(
-  { length: 24 },
-  (_, i) => `/images/portfolio/${i + 1}.${i % 2 === 0 ? "jpg" : "JPG"}`
-);
+const galleryImages = [
+  "/images/portfolio/1.jpg",
+  "/images/portfolio/2.jpg",
+  "/images/portfolio/3.jpg",
+  "/images/portfolio/4.JPG",
+  "/images/portfolio/5.jpg",
+  "/images/portfolio/6.jpg",
+  "/images/portfolio/7.jpg",
+  "/images/portfolio/8.JPG",
+  "/images/portfolio/9.jpg",
+  "/images/portfolio/10.jpg",
+  "/images/portfolio/11.jpg",
+  "/images/portfolio/12.jpg",
+  "/images/portfolio/13.jpg",
+  "/images/portfolio/14.jpg",
+  "/images/portfolio/15.jpg",
+  "/images/portfolio/16.jpg",
+  "/images/portfolio/17.jpg",
+  "/images/portfolio/18.jpg",
+  "/images/portfolio/19.jpg",
+  "/images/portfolio/20.jpg",
+  "/images/portfolio/21.jpg",
+  "/images/portfolio/22.jpg",
+  "/images/portfolio/23.jpg",
+  "/images/portfolio/24.JPG",
+];
 
 export default function PortfolioPage() {
   return (
