@@ -97,8 +97,7 @@ body {
 
 @font-face {
   font-family: "Fontspring-DEMO-quichesans-medium";
-  src: url("/fonts/Fontspring-DEMO-quichesans-medium.woff2") format("woff2"),
-    url("/fonts/Fontspring-DEMO-quichesans-medium.woff") format("woff");
+  src: url("/fonts/Fontspring-DEMO-quichesans-medium.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }

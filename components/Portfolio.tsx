@@ -29,7 +29,7 @@ const featuredWeddings: WeddingCouple[] = [
 
 const galleryImages = Array.from(
   { length: 24 },
-  (_, i) => `/images/portfolio/${i + 1}.jpg`
+  (_, i) => `/images/portfolio/${i + 1}.${i % 2 === 0 ? "jpg" : "JPG"}`
 );
 
 export default function PortfolioPage() {
