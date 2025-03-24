@@ -64,7 +64,7 @@ export default function EnquireForm() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="w-full md:w-1/2 mb-8 md:mb-0"
         >
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight font-chloe">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold leading-tight font-quiche">
             Book Shoot
             <br />
             Now

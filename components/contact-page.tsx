@@ -241,7 +241,7 @@ export default function ContactPage() {
       transition={{ duration: 0.6 }}
       className="overflow-hidden bg-gradient-to-b from-black via-gray-900 to-black text-white"
     >
-      <div className="container mx-auto px-4 md:px-8 py-12 overflow-hidden font-chloe tracking-widest">
+      <div className="container mx-auto px-4 md:px-8 py-12 overflow-hidden font-quiche tracking-widest">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Side - Navigation */}
           <motion.div

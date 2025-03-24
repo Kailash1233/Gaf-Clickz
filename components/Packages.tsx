@@ -105,7 +105,7 @@ export function Packages() {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl font-extrabold text-center mb-8 font-chloe tracking-widest"
+          className="text-4xl font-extrabold text-center mb-8 font-quiche tracking-widest"
         >
           Photography Packages
         </motion.h1>
@@ -140,7 +140,7 @@ export function Packages() {
                 />
               </div>
               <div className="p-6 text-center">
-                <h2 className="text-xl font-semibold font-chloe tracking-widest">
+                <h2 className="text-xl font-semibold font-quiche tracking-widest">
                   {pkg.title}
                 </h2>
                 <p className="text-gray-700 text-sm mt-2 font-gotham">

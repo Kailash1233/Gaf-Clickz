@@ -7,7 +7,7 @@ import Packages from "@/components/Packages";
 import EnquireForm from "@/components/enquire-form";
 import ContactPage from "@/components/contact-page";
 import PortfolioPage from "@/components/Portfolio";
-import { TestimonialSection } from "@/components/testimonial";
+import Testimonials from "@/components/testimonial";
 
 export default function Home() {
   const [imageSrc, setImageSrc] = useState<string | null>(null);
@@ -60,7 +60,8 @@ export default function Home() {
       </div>
 
       <div id="testimonials">
-        <TestimonialSection />
+        {/* <TestimonialSection /> */}
+        <Testimonials />
       </div>
 
       <div id="packages">

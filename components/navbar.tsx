@@ -60,7 +60,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl mx-auto flex justify-between items-center py-3 font-chloe tracking-widest">
+      <div className="w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl mx-auto flex justify-between items-center py-3 font-quiche tracking-widest">
         <Link href="/" className="font-bold text-xl flex items-center">
           {/* <Image
             src="/gaftext.png"

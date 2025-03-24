@@ -120,7 +120,9 @@ export function Gallery() {
       className="bg-gradient-to-b from-black via-gray-900 to-black min-h-screen py-16"
     >
       <div className="text-white text-center max-w-4xl mx-auto px-6">
-        <h1 className="text-5xl font-extrabold mb-6 font-chloe tracking-widest">Gallery</h1>
+        <h1 className="text-5xl font-extrabold mb-6 font-quiche tracking-widest">
+          Gallery
+        </h1>
         <p className="text-lg text-gray-300 font-gotham">
           Discover a collection of moments captured by Gaf Clickz, where every
           image tells a unique story. From weddings to portraits, our gallery

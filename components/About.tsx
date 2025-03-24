@@ -15,7 +15,7 @@ const About = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-4xl font-extrabold text-white text-center mb-8 font-chloe tracking-widest"
+          className="text-4xl font-extrabold text-white text-center mb-8 font-quiche tracking-widest"
         >
           About Gaf Clickz
         </motion.h2>
@@ -56,7 +56,7 @@ const About = () => {
             className="flex flex-col justify-center space-y-6"
           >
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-4 font-chloe tracking-widest">
+              <h3 className="text-2xl font-semibold text-white mb-4 font-quiche tracking-widest">
                 About Abdul Gafur
               </h3>
               <p className="text-lg text-gray-200 leading-relaxed font-gotham">
@@ -79,7 +79,7 @@ const About = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold text-white mb-4 font-chloe tracking-widest">
+              <h3 className="text-2xl font-semibold text-white mb-4 font-quiche tracking-widest">
                 Our Mission
               </h3>
               <p className="text-lg text-gray-200 leading-relaxed font-gotham">

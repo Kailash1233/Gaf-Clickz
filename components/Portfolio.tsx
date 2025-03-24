@@ -40,7 +40,7 @@ export default function PortfolioPage() {
     >
       <div className="container mx-auto px-4 py-12 md:py-16">
         {/* Heading */}
-        <h1 className="text-3xl md:text-5xl text-center mb-8 md:mb-12 font-chloe tracking-widest">
+        <h1 className="text-3xl md:text-5xl text-center mb-8 md:mb-12 font-quiche tracking-widest">
           Gallery
         </h1>
 
@@ -66,11 +66,11 @@ export default function PortfolioPage() {
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4 md:p-6">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-4 md:p-6 font-quiche">
                 <h2 className="text-lg md:text-2xl font-serif mb-1">
                   {wedding.title}
                 </h2>
-                <p className="text-xs md:text-sm text-gray-200">
+                <p className="text-xs md:text-sm text-gray-200 font-gotham">
                   {wedding.location}
                 </p>
               </div>

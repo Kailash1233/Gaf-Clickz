@@ -17,7 +17,7 @@ export default function TermsAndConditionsPage() {
           />
         </div>
         <div className="container mx-auto p-6 md:p-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 font-chloe tracking-widest">
+          <h1 className="text-3xl md:text-4xl font-bold text-center mb-8 font-quiche tracking-widest">
             Terms and Conditions
           </h1>
           <div className="prose max-w-none space-y-8 text-gray-300 font-gotham">
