@@ -166,7 +166,7 @@ export function Packages() {
       <Dialog
         open={isOpen}
         onClose={() => setIsOpen(false)}
-        className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 font-gotham font-medium"
       >
         <Dialog.Panel className="bg-white p-6 rounded-lg shadow-lg w-96 text-center">
           <Dialog.Title className="text-2xl font-bold mb-4 text-black">
@@ -204,6 +204,7 @@ export function Packages() {
                   className="border p-2 rounded text-black"
                   required
                 />
+                <p className="text-black text-start font-bold">Event Date:</p>
                 <input
                   type="date"
                   name="date"
