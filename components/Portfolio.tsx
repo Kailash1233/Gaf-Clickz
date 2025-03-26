@@ -51,7 +51,7 @@ const galleryImages = [
   "/images/portfolio/21.jpg",
   "/images/portfolio/22.jpg",
   "/images/portfolio/23.jpg",
-  "/images/portfolio/24.JPG",
+  "/images/portfolio/24.jpg",
 ];
 
 export default function PortfolioPage() {
