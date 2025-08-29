@@ -357,10 +357,11 @@ export default function ContactPage() {
           className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center font-gotham"
         >
           <p className="text-gray-400 text-sm">
-            Copyright © 2025 Gafclickz. All rights reserved | Designed by{" "}
+            Copyright © 2025 Gafclickz. All rights reserved | Designed with ❤️
+            by{" "}
             <Link
               href="https://adszoo.in"
-              className="text-white hover:underline"
+              className="text-white hover:underline inline-flex items-center gap-1"
             >
               Adszoo
             </Link>
